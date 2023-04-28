@@ -15,19 +15,16 @@ public class DataLoader implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
         Inventory inventory = new Inventory();
-        inventory.setSkuCode("Iphone 14");
+        inventory.setSkuCode("Iphone_14");
         inventory.setQuantity(50);
         inventoryRepository.save(inventory);
 
         Inventory inventory1 = new Inventory();
-        inventory1.setSkuCode("Iphone 14 blue");
-        inventory1.setQuantity(50);
+        inventory1.setSkuCode("Iphone_14_blue");
+        inventory1.setQuantity(0);
         inventoryRepository.save(inventory1);
 
-        Inventory inventory2 = new Inventory();
-        inventory2.setSkuCode("Iphone 14 red");
-        inventory2.setQuantity(150);
-        inventoryRepository.save(inventory2);
+
 
     };
 
